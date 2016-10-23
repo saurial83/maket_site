@@ -1,0 +1,145 @@
+/*УБираем отступы*/
+*{
+    margin: 0;
+    padding:0; 
+}
+
+body{
+    overflow: scroll;
+}
+/*Главный контейнер*/
+.container{
+    width: 1500px;
+    height: 700px;
+    margin: 0 auto;
+}
+/*Шапка*/
+.header{
+    width: 1500px;
+    height: 700px;
+    background-color: #abeafa;
+}
+/*ЛОГО*/
+.header > a{
+    display: block;
+    float: left;
+    margin-left: 234px;
+    margin-top: 24px;
+}
+
+/*Иконки*/
+.icons{
+    display: block;
+    float:right;
+}
+.fa.fa-instagram{
+    margin-right: 229px;
+}
+.fa{
+    margin-top: 50px;
+    margin-right: 15px;
+    color: aliceblue;
+}
+/*Под лого*/
+.header .welcome{
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 270px;
+    height: 300px;
+    margin-top: 201px;
+    margin-left: 165px;
+    background-color: #fff51f;
+    font: 700 30px / 30px Raleway;
+}
+
+.wel_to_comp{
+    font: 700 30px / 30px Raleway;
+    padding: 82px 46px 0 25px;
+}
+
+.wel_to_comp  p{
+    font: 700 18px / 14px Raleway;
+    padding-top: 12px;
+    width: 218px;
+    height: 60px;
+}
+
+/*Справа от лого*/
+.funride{
+    float: right;
+    width: 313px;
+    height: 169px;
+    background-color: inherit;
+    color: #fff51f;
+    font: 700 48px / 34px Raleway;
+    margin-right: 274px;
+    margin-top: 177px;
+}
+
+.funride p{
+    font: 400 18px / 24px Raleway;
+    padding-top: 5px;
+}
+
+/*Кнопка "КУПИТЬ СЕЙЧАС"*/
+.buy_now{
+    float: right;
+    width: 124px;
+    height: 49px;
+    background-color: #fff51f;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 460px;
+    margin-top: 62px;
+    outline: none;
+}
+
+.buy_now:hover{
+    border: 1px solid black;
+}
+
+/*МЕНЮ*/
+.menu{
+    width: 270px;
+    height: 475px;
+    float: left;
+    margin-left: 165px;
+    margin-top: -20px;
+}
+ 
+.menu ul .menu_1{
+    background-color: #333333;
+    height: 66px;
+    color: aliceblue;
+    font: 700 14px / 32px Roboto;
+    line-height: 70px;
+    f
+}
+.menu ul li{
+    list-style-type: none;
+    height: 43px;
+    background-color: #26d2fc;
+    padding-left: 40px;
+    text-align: left;
+    font: 700 14px / 32px Roboto;
+    line-height: 50px;   
+}
+
+.menu ul li:hover{
+    background-color: #333333;
+    color: aliceblue;
+}
+
+.menu ul .menu_1, .menu ul li:hover{
+    cursor: pointer;
+} 
+/*Тело*/
+.new_products{
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+    background-color: #f8f8f8;
+    width: 870px;
+    height: 724px;
+}
