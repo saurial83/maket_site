@@ -333,7 +333,7 @@ body{
     height: 185px;
     background-color: #f8f8f8; 
 }
-.photo_1, .photo_2, .photo_3, .photo_4, .photo_5, .photo_6{
+.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img{
     width: 175px;
     height: 175px;
     margin-left: 4px;
