@@ -6,6 +6,7 @@
 
 body{
     overflow: scroll;
+    background-color: #f8f8f8;
 }
 /*Главный контейнер*/
 .container{
@@ -131,15 +132,210 @@ body{
     color: aliceblue;
 }
 
-.menu ul .menu_1, .menu ul li:hover{
+.menu ul .menu_1:hover, .menu ul li:hover{
     cursor: pointer;
 } 
-/*Тело*/
+/*NEW PRODUCTS*/
 .new_products{
-    float: left;
-    margin-left: 30px;
+    margin-left: 465px;
     margin-top: -20px;
     background-color: #f8f8f8;
     width: 870px;
     height: 724px;
+}
+
+.dell, .lenovo{
+    position: relative;
+    
+}
+/*Ярлычки*/
+.new{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 26px solid transparent;
+    border-top: 26px solid #e24602;
+    border-right: 26px solid #e24602;
+}
+.hot{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 26px solid transparent;
+    border-top: 26px solid #faef03;
+    border-right: 26px solid #faef03;
+}
+.insc_new{
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    color: #ffffff;
+    font: 400 9px Roboto;    
+}
+
+.insc_hot{
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    color: #000000;
+    font: 400 9px Roboto;
+}
+.new_products_container, .container_top_product, .container_sale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.new_products p, .top_products p, .sale_products p{
+    display: inline-block;
+    margin: 31px 0 0 25px;
+    color: #707070;
+    font: italic 900 22px Roboto;
+}
+/*Товары*/
+.dell, .lenovo, .hp, .fujitsu, .panasonic, .getac, .top_1, .top_2, .top_3,
+.sale_1, .sale_2, .sale_3{
+    width: 270px;
+    height: 320px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+/*контейнер изображений*/
+.dell img, .lenovo img, .hp img, .fujitsu img, .panasonic img,
+.getac img, .top img, .sale img{
+    width: 250px;
+    height: 235px;
+    margin: 10px 10px 0 10px;
+    background-color: #eaeaea;
+}
+
+.dell a, .lenovo a, .hp a, .fujitsu a, .panasonic a,
+.getac a, .top a, .sale a{
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    height: 80px;
+    color: #333333;
+    font: italic 900 14px / 18.012px Roboto;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.price{
+    float: right;
+    color: #333333;
+    font: italic 900 18.01px Roboto;
+    vertical-align: sub;
+    padding-left: 30px;
+
+}
+
+.old_price{
+    float: right;
+    color: #e24602;
+    font: italic 900 14.01px Roboto; 
+    clear: both;
+}
+
+/*Под меню*/
+.now_is_open{
+    width: 270px;
+    height: 300px;
+    background-color: #e0e0e0;
+    float: left;
+    margin-left: 165px;
+    margin-top: -500px;
+}
+
+.now_is_open div{
+    width: 109px;
+    height: 98px;
+    font: 800 36px / 36px Raleway;
+    line-height: 36px;
+    margin-left: 142px;
+    margin-top: 129px;
+}
+
+/*TOP PRODUCTS*/
+.top_products{
+    width: 870px;
+    height: 400px;
+    margin-left: 465px;
+    margin-top: 70px;
+    background-color: #f8f8f8;
+}
+
+/*SALE PRODUCTS*/
+.sale_products{
+    width: 870px;
+    height: 400px;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    margin-left: 465px;
+}
+
+/*Бренды*/
+.brand{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1170px;
+    height: 160px;
+    margin: 30px 165px 0 165px;
+}
+
+/*Социалка*/
+.social_container{
+    width: 1170px;
+    height: 350px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.inst_logo img{
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    background-repeat: no-repeat;
+    margin-left: 449px;
+    margin-top: 51px;
+}
+
+.inst_feed{
+    display: inline-block;
+    color: #333333;
+    float: right;
+    font: italic 900 22px Roboto;
+    margin-right: 447px;
+    margin-top: 54px;
+    
+}
+
+.inst_feed:after{
+    content: " #CompLex";
+    color: #333333;
+    font: italic 900 18px Roboto;
+}
+
+.inst_photo{
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin-top: 26px;
+}
+.photo{
+    width: 185px;
+    height: 185px;
+    background-color: #f8f8f8; 
+}
+.photo_1, .photo_2, .photo_3, .photo_4, .photo_5, .photo_6{
+    width: 175px;
+    height: 175px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
