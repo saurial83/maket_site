@@ -72,15 +72,19 @@ body{
     width: 313px;
     height: 169px;
     background-color: inherit;
-    color: #fff51f;
-    font: 700 48px / 34px Raleway;
     margin-right: 274px;
     margin-top: 177px;
 }
 
-.funride p{
+.funride > p{
+   font: 700 48px / 34px Raleway;
+   color: #fff51f;
+}
+
+.funride > p + p{
     font: 400 18px / 24px Raleway;
     padding-top: 5px;
+    color: #fff51f;
 }
 
 /*Кнопка "КУПИТЬ СЕЙЧАС"*/
@@ -97,7 +101,7 @@ body{
 }
 
 .buy_now:hover{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 /*МЕНЮ*/
@@ -144,11 +148,12 @@ body{
     height: 724px;
 }
 
+/*Ярлычки*/
 .dell, .lenovo{
     position: relative;
     
 }
-/*Ярлычки*/
+
 .new{
     position: absolute;
     right: 0;
@@ -180,6 +185,7 @@ body{
     color: #000000;
     font: 400 9px Roboto;
 }
+
 .new_products_container, .container_top_product, .container_sale{
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +206,13 @@ body{
     height: 320px;
     background-color: #ffffff;
     margin-top: 30px;
+    border: 3px solid #eaeaea;
 }
+
+.dell:hover, .lenovo:hover, .hp:hover, .fujitsu:hover, .panasonic:hover, .getac:hover, .top_1:hover, .top_2:hover, .top_3:hover,.sale_1:hover, .sale_2:hover, .sale_3:hover{
+    border: 3px solid #abeafa;
+}
+
 /*контейнер изображений*/
 .dell img, .lenovo img, .hp img, .fujitsu img, .panasonic img,
 .getac img, .top img, .sale img{
@@ -294,7 +306,6 @@ body{
     width: 1170px;
     height: 350px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .inst_logo img{
@@ -339,3 +350,99 @@ body{
     margin-left: 4px;
     margin-top: 4px;
 }
+/*Кнопки социалки*/
+.social_button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.face{
+    width: 390px;
+    height: 150px;
+    background-color: #3b5997; 
+}
+
+.twit{
+    width: 390px;
+    height: 150px;
+    background-color: #3fccfd;
+}
+
+.pin{
+    width: 390px;
+    height: 150px;
+    background-color: #cb2027;
+}
+
+.face img{
+    margin-left: 180px;
+    margin-top: 44px;
+}
+
+.twit img{
+    margin-left: 163px;
+    margin-top: 49px;
+}
+
+.pin img{
+    margin-left: 163px;
+    margin-top: 43px;
+}
+
+/*Подвал*/
+
+.footer{
+    position: relative;
+    width: 1500px;
+    height: 348px;
+    background-color: #373737;
+}
+
+.copy{
+    position: absolute;
+    bottom: 0px;
+    width: 1500px;
+    height: 47px;
+    background-color: #333333;
+}
+.footer .copy > p{
+    margin-left: 189px;
+    margin-top: 21px;
+    color: #dad9d9;
+    font: 400 12px / 21.6px Roboto;
+    margin-bottom: 0;
+}
+
+.footer > div > ul{
+    list-style-type: none;
+    color: #ffffff;
+    font: 400 12px / 18px Roboto;
+    margin-top: 28px;
+}
+
+.footer > div > p{
+    color: #ffffff;
+    font: 700 18px Raleway;
+}
+
+.category{
+    float: left;
+    margin-left: 192px;
+    margin-top: 75px;
+}
+.accounts{
+    float: left;
+    margin-left: 120px;
+    margin-top: 75px;
+}
+
+.support{
+    float: left;
+    margin-left: 89px;
+    margin-top: 75px;
+}
+
