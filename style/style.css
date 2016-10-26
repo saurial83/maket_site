@@ -8,12 +8,14 @@ body{
     overflow: scroll;
     background-color: #f8f8f8;
 }
+
 /*Главный контейнер*/
 .container{
     width: 1500px;
     height: 700px;
     margin: 0 auto;
 }
+
 /*Шапка*/
 .header{
     width: 1500px;
@@ -33,14 +35,21 @@ body{
     display: block;
     float:right;
 }
+
 .fa.fa-instagram{
     margin-right: 229px;
 }
+
 .fa{
     margin-top: 50px;
     margin-right: 15px;
-    color: aliceblue;
+    color: aliceblue;	
 }
+
+.fa:hover{
+	color: #000000;
+}
+
 /*Под лого*/
 .header .welcome{
     display: inline-block;
@@ -55,12 +64,12 @@ body{
 }
 
 .wel_to_comp{
-    font: 700 30px / 30px Raleway;
+    font: 700 30px / 30px Comfortaa;
     padding: 82px 46px 0 25px;
 }
 
 .wel_to_comp  p{
-    font: 700 18px / 14px Raleway;
+    font: 700 18px / 14px Comfortaa;
     padding-top: 12px;
     width: 218px;
     height: 60px;
@@ -76,13 +85,13 @@ body{
     margin-top: 177px;
 }
 
-.funride > p{
-   font: 700 48px / 34px Raleway;
+.sale2016 > p{
+   font: 700 48px / 34px Comfortaa;
    color: #fff51f;
 }
 
-.funride > p + p{
-    font: 400 18px / 24px Raleway;
+.sale2016 > p + p{
+    font: 400 18px / 24px Comfortaa;
     padding-top: 5px;
     color: #fff51f;
 }
@@ -95,50 +104,60 @@ body{
     background-color: #fff51f;
     color: #000000;
     font-weight: bold;
+	font-family: 'Comfortaa';
     margin-right: 460px;
     margin-top: 62px;
     outline: none;
 }
 
 .buy_now:hover{
-    border: 2px solid black;
+    background-color: #ffe51f;
+}
+
+.buy_now:active{
+	position: relative;
+	top: 3px;
 }
 
 /*МЕНЮ*/
-.menu{
+.menu_catalog{
     width: 270px;
     height: 475px;
     float: left;
     margin-left: 165px;
-    margin-top: -20px;
 }
  
-.menu ul .menu_1{
+.menu_catalog ul .menu_1{
     background-color: #333333;
     height: 66px;
     color: aliceblue;
-    font: 700 14px / 32px Roboto;
+    font: 700 14px / 32px Comfortaa;
     line-height: 70px;
-    f
 }
-.menu ul li{
+
+.menu_catalog ul li{
     list-style-type: none;
     height: 43px;
     background-color: #26d2fc;
     padding-left: 40px;
     text-align: left;
-    font: 700 14px / 32px Roboto;
+    font: 700 14px / 32px Comfortaa;
     line-height: 50px;   
 }
 
-.menu ul li:hover{
+.menu_catalog ul a{
+	text-decoration: none;
+}
+
+.menu_catalog ul li:hover{
     background-color: #333333;
     color: aliceblue;
 }
 
-.menu ul .menu_1:hover, .menu ul li:hover{
+.menu_catalog ul .menu_1:hover, .menu_catalog ul li:hover{
     cursor: pointer;
 } 
+
 /*NEW PRODUCTS*/
 .new_products{
     margin-left: 465px;
@@ -148,6 +167,23 @@ body{
     height: 724px;
 }
 
+.navi ul{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: 42px;
+	margin-top: 38px;
+	color: #989898;
+	font: 400 12px Roboto;
+	list-style-type: none;
+}
+
+.navi ul a{
+	text-decoration: none;
+}
+.navi ul a:last-child{
+	background-color: #faef03;
+}
 /*Ярлычки*/
 .dell, .lenovo{
     position: relative;
@@ -162,6 +198,7 @@ body{
     border-top: 26px solid #e24602;
     border-right: 26px solid #e24602;
 }
+
 .hot{
     position: absolute;
     right: 0;
@@ -206,11 +243,10 @@ body{
     height: 320px;
     background-color: #ffffff;
     margin-top: 30px;
-    border: 3px solid #eaeaea;
 }
 
 .dell:hover, .lenovo:hover, .hp:hover, .fujitsu:hover, .panasonic:hover, .getac:hover, .top_1:hover, .top_2:hover, .top_3:hover,.sale_1:hover, .sale_2:hover, .sale_3:hover{
-    border: 3px solid #abeafa;
+    box-shadow: 0 0 15px #000;
 }
 
 /*контейнер изображений*/
@@ -351,7 +387,7 @@ body{
     margin-top: 4px;
 }
 /*Кнопки социалки*/
-.social_button{
+.social_button, .social_button_catalog{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -360,6 +396,9 @@ body{
     margin: 0 auto;
 }
 
+.social_button_catalog{
+	margin-top: 131px;
+}
 .face{
     width: 390px;
     height: 150px;
@@ -378,23 +417,27 @@ body{
     background-color: #cb2027;
 }
 
-.face img{
+.face a img{
     margin-left: 180px;
     margin-top: 44px;
 }
 
-.twit img{
+.twit a img{
     margin-left: 163px;
     margin-top: 49px;
 }
 
-.pin img{
+.pin a img{
     margin-left: 163px;
     margin-top: 43px;
 }
 
-/*Подвал*/
+.face:hover, .twit:hover, .pin:hover{
+	position: relative;
+	bottom: 5px;
+}
 
+/*Подвал*/
 .footer{
     position: relative;
     width: 1500px;
@@ -409,6 +452,7 @@ body{
     height: 47px;
     background-color: #333333;
 }
+
 .footer .copy > p{
     margin-left: 189px;
     margin-top: 21px;
@@ -417,16 +461,23 @@ body{
     margin-bottom: 0;
 }
 
-.footer > div > ul{
+.footer > div ul{
     list-style-type: none;
-    color: #ffffff;
+	color: #ffffff;
+    font: 400 12px / 18px Roboto;
+    margin-top: 28px;
+}
+
+.footer > div ul a{
+	text-decoration: none;
+	color: #ffffff;
     font: 400 12px / 18px Roboto;
     margin-top: 28px;
 }
 
 .footer > div > p{
     color: #ffffff;
-    font: 700 18px Raleway;
+    font: 700 18px Comfortaa;
 }
 
 .category{
@@ -436,13 +487,100 @@ body{
 }
 .accounts{
     float: left;
-    margin-left: 120px;
+    margin-left: 50px;
     margin-top: 75px;
 }
 
 .support{
     float: left;
-    margin-left: 89px;
+    margin-left: 50px;
     margin-top: 75px;
+}
+
+ /*Новостная рассылка*/
+.newsletter{
+	float: left;
+	margin-left: 50px;
+	margin-top: 75px;
+}
+
+.newsletter > p + p{
+	color: #f8f8f8;
+	font: 400 12px / 12px Roboto;
+	margin-top: 8px;
+}
+
+.newsletter input[type="email"]{
+	width: 180px;
+	height: 30px;
+	outline: none;
+	margin-top: 20px;
+	background-color: #fff51f;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.newsletter input[type="submit"]{
+	width: 71px;
+	height: 30px;
+	outline: none;
+	background-color: #000000;
+	color: #ffffff;
+	font: 400 12px / 21px Roboto;
+}
+
+.newsletter input[type="submit"]:active{
+	font-size: 11px;
+}
+.cash_cards{
+	margin-top: 45px;
+	margin-left: -10px;
+}
+
+.cash_cards img:not(:first-child){
+	margin-left: 10px;
+}
+
+.cash_cards img:active{
+	position: relative;
+	top: 2px;
+}
+
+.about_complex{
+	float: right;
+	width: 232px;
+	height: 85px;
+	margin-right: 191px;
+	margin-top: 75px;
+		
+}
+.about_complex > p + p{
+	color: #f8f8f8;
+	font: 400 12px / 12px Roboto;
+	margin-top: 8px;
+}
+
+.about_phone{
+	color: #ffffff;
+	font: 400 14px / 23.4px Roboto;
+	margin-top: 14px;
+}
+
+.about_email{
+	color: #ffffff;
+	font: 400 14px / 23.4px Roboto;
+	margin-top: 15px;
+}
+
+.about_phone span{
+	color: #ffffff;
+	font: 400 14px / 36px Roboto;
+	margin-left: 18px;
+}
+
+.about_email span{
+	color: #faef03;
+	font: 400 14px / 36px Roboto;
+	margin-left: 35px;
 }
 
