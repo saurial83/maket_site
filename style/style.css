@@ -22,8 +22,20 @@ body{
     height: 700px;
     background-color: #abeafa;
 }
+
+.header_catalog{
+	width: 1500px;
+	height: 350px;
+	background-color: #abeafa;
+}
+
+.header_contacts{
+	width: 1500px;
+	height: 350px;
+	background-image: url(../images/maps.png);
+}
 /*ЛОГО*/
-.header > a{
+.header > a, .header_catalog > a, .header_contacts > a{
     display: block;
     float: left;
     margin-left: 234px;
@@ -32,15 +44,33 @@ body{
 
 /*Иконки*/
 .icons{
-    display: block;
     float:right;
 }
 
-.fa.fa-instagram{
+.icons_contacts{
+	float: right;
+	margin-top: 40px;
+	margin-right: 173px;
+	width: 200px;
+	height: 35px;
+	background-color: rgba(193, 193, 193, 0.8);
+}
+
+.icons_contacts a .fa{
+	margin-top: 10px;
+	margin-right: 12px;
+	color: aliceblue;
+}
+
+.icons_contacts .fa.fa-facebook{
+	margin-left: 24px;
+	
+}
+.icons .fa.fa-instagram{
     margin-right: 229px;
 }
 
-.fa{
+.icons .fa{
     margin-top: 50px;
     margin-right: 15px;
     color: aliceblue;	
@@ -88,6 +118,7 @@ body{
 .sale2016 > p{
    font: 700 48px / 34px Comfortaa;
    color: #fff51f;
+   line-height: 44px;
 }
 
 .sale2016 > p + p{
@@ -120,14 +151,21 @@ body{
 }
 
 /*МЕНЮ*/
-.menu_catalog{
+.menu{
     width: 270px;
     height: 475px;
     float: left;
     margin-left: 165px;
+	margin-top: -20px;
 }
  
-.menu_catalog ul .menu_1{
+.menu_catalog{
+	width: 270px;
+    height: 475px;
+    float: left;
+    margin-left: 165px;
+}
+.menu ul .menu_1, .menu_catalog ul .menu_1{
     background-color: #333333;
     height: 66px;
     color: aliceblue;
@@ -135,7 +173,7 @@ body{
     line-height: 70px;
 }
 
-.menu_catalog ul li{
+.menu ul li, .menu_catalog ul li{
     list-style-type: none;
     height: 43px;
     background-color: #26d2fc;
@@ -145,16 +183,16 @@ body{
     line-height: 50px;   
 }
 
-.menu_catalog ul a{
+.menu ul a, .menu_catalog ul a{
 	text-decoration: none;
 }
 
-.menu_catalog ul li:hover{
+.menu ul li:hover, .menu_catalog ul li:hover{
     background-color: #333333;
     color: aliceblue;
 }
 
-.menu_catalog ul .menu_1:hover, .menu_catalog ul li:hover{
+.menu ul .menu_1:hover, .menu ul li:hover, .menu_catalog ul .menu_1:hover, .menu_catalog ul li:hover{
     cursor: pointer;
 } 
 
@@ -167,21 +205,98 @@ body{
     height: 724px;
 }
 
-.navi ul{
+.contacts_pole{
+    margin-left: 465px;
+    background-color: #f8f8f8;
+    width: 870px;
+    height: 724px;
+}
+
+p > label{
+	color: #333333;
+	font: 700 12px Roboto;
+}
+
+input[type="text"], input[type="email"]{
+	width: 330px;
+	height: 27px;
+	margin-top: 10px;
+	margin-bottom: 34px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
+	border: none;
+}
+
+textarea{
+	margin-top: 10px;
+	border: none;
+}
+
+.message_contacts{
+	float: left;
+	margin-top: 92px;
+	margin-left: 45px;
+}
+
+.info_address{
+	float: left;
+	margin-left: 50px;
+	width: 292px;
+}
+
+.info_address > p{
+	color: #353535;
+	font: 900 18px / 14px Roboto;
+	margin-top: 101px;
+}
+
+.metka{
+	margin-top: 18px;	
+}
+
+.metka > img + span{
+	margin-left: 10px;
+	color: #777777;
+	font: 400 16px / 14px Roboto;
+}
+
+.phone_contacts{
+	margin-top: 57px;
+	color: #333333;
+	font: 400 20px / 20.8px Roboto;
+}
+
+.email_contacts{
+	margin-top: 19px;
+	margin-bottom: 30px;
+	color: #333333;
+	font: 400 20px / 20.8px Roboto;
+}
+
+.info_address > span{
+	color: #333333;
+	font: 400 16px / 14px Roboto;
+	
+}
+.navi ul, .navi_contacts ul{
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin-left: 42px;
 	margin-top: 38px;
 	color: #989898;
-	font: 400 12px Roboto;
+	font: 400 16px Roboto;
 	list-style-type: none;
 }
 
-.navi ul a{
+.navi_contacts ul{
+	margin-top: 18px;
+}
+.navi ul a, .navi_contacts ul a{
 	text-decoration: none;
 }
-.navi ul a:last-child{
+.navi ul a:last-child, .navi_contacts ul a:last-child{
 	background-color: #faef03;
 }
 /*Ярлычки*/
@@ -449,16 +564,17 @@ body{
     position: absolute;
     bottom: 0px;
     width: 1500px;
-    height: 47px;
+    height: 50px;
     background-color: #333333;
 }
 
 .footer .copy > p{
+	float: left;
     margin-left: 189px;
     margin-top: 21px;
     color: #dad9d9;
     font: 400 12px / 21.6px Roboto;
-    margin-bottom: 0;
+    margin-bottom: 0px;;
 }
 
 .footer > div ul{
@@ -478,6 +594,21 @@ body{
 .footer > div > p{
     color: #ffffff;
     font: 700 18px Comfortaa;
+}
+
+.communication{
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+}
+
+.communication a .fa{
+	margin-right: 15px;
+	color: aliceblue;	
+}
+
+.communication  a .fa.fa-instagram{
+    margin-right: 216px;
 }
 
 .category{
