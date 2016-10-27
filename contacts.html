@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="header_contacts">
-        <a href="#" style="display: block; float: left;">
+        <a href="index.html" style="display: block; float: left;">
                 <img src="images/logo.png" alt="logo">
         </a>
         <div class="icons_contacts">
@@ -43,11 +43,14 @@
       	</ul>
       </div> 	
       	<div class="message_contacts">
-		  <p><label>ПОЛНОЕ ИМЯ<sup>*</sup><br/><input type="text" name="full_name"></label></p>
-		  <p><label>E-MAIL <sup>*</sup><br/><input type="email" name="email"></label></p>
-		  <p><label>КОМПАНИЯ<br/><input type="text" name="company"></label></p>
-		  <p><label>ТЕМА <sup>*</sup><br/><input type="text" name="subject"></label></p>
-          <p><label>СООБЩЕНИЕ<br/><textarea name="message" cols="43" rows="10"></textarea></label></p>
+		  <p><label>ПОЛНОЕ ИМЯ<sup>*</sup><br/><input type="text" name="full_name" required
+		  placeholder="Ваше имя"></label></p>
+		  <p><label>E-MAIL <sup>*</sup><br/><input type="email" name="email" required
+ 		  placeholder="Email"></label></p>
+		  <p><label>КОМПАНИЯ<br/><input type="text" name="company" placeholder="Название компании"></label></p>
+		  <p><label>ТЕМА<sup>*</sup><br/><input type="text" name="subject" required
+ 		  placeholder="Тема сообщения"></label></p>
+          <p><label>СООБЩЕНИЕ<br/><textarea name="message" cols="49" rows="10"></textarea></label></p>
 	    </div> 
 	    <div class="info_address">
 	    	<p>Address</p>

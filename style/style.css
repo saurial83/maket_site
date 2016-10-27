@@ -231,6 +231,7 @@ input[type="text"], input[type="email"]{
 textarea{
 	margin-top: 10px;
 	border: none;
+	resize: none;
 }
 
 .message_contacts{
@@ -293,18 +294,29 @@ textarea{
 .navi_contacts ul{
 	margin-top: 18px;
 }
+
 .navi ul a, .navi_contacts ul a{
 	text-decoration: none;
 }
+
 .navi ul a:last-child, .navi_contacts ul a:last-child{
 	background-color: #faef03;
 }
-/*Ярлычки*/
-.dell, .lenovo{
-    position: relative;
-    
+
+.photo_dell{
+	float: left;
+	margin-top: 53px;
+	margin-left: 38px;
 }
 
+img.pic{
+	width: 370px;
+	height: 370px;
+}
+/*Ярлычки*/
+.dell, .lenovo{
+    position: relative;   
+}
 .new{
     position: absolute;
     right: 0;
@@ -373,19 +385,22 @@ textarea{
     background-color: #eaeaea;
 }
 
-.dell a, .lenovo a, .hp a, .fujitsu a, .panasonic a,
-.getac a, .top a, .sale a{
+.price_dell, .price_lenovo, .price_hp, .price_fujitsu, .price_panasonic,
+.price_getac, .top a, .sale a{
     display: flex;
     justify-content: space-around;
     width: 250px;
     height: 80px;
     color: #333333;
     font: italic 900 14px / 18.012px Roboto;
-    text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+}
 
+.dell a, .lenovo a, .hp a, .fujitsu a, .panasonic a, .getac a, .top_1 a, .top_2 a, .top_3 a,
+.sale_1 a, .sale_2 a, .sale_3 a{
+	text-decoration: none;
 }
 
 .price{
